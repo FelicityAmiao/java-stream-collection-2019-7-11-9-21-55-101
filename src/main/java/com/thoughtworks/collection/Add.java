@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 public class Add {
     public int getSumOfEvens(int leftBorder, int rightBorder) {
-        return IntStream.range(Math.min(leftBorder, rightBorder)-1, Math.max(leftBorder, rightBorder)+1).filter(item -> item % 2 == 0).sum();
+        return IntStream.range(Math.min(leftBorder, rightBorder), Math.max(leftBorder, rightBorder)+1).filter(item -> item % 2 == 0).sum();
 
     }
 
